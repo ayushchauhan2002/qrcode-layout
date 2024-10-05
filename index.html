@@ -11,20 +11,55 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     body{
-      background-color:hsl(212, 45%, 89%) ;
+      background-image: url("images/favicon-32x32.png");
+      display: flex;
+      justify-content: center;
+      height: 100vh;
     }
-    div{
+    .box{
+      background-color:hsl(212, 45%, 89%) ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:90vw;
+      height: 80vh;
+      align-self: center;
+      border-radius: 5%;
+      box-shadow: 10px 10px 5px rgb(116, 116, 116)
+    }
+    .container{
       background-color: hsl(0, 0%, 100%) ;
       width: 576px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      padding: 10px;
+      border-radius: 5%;
+      box-shadow: 10px 10px 5px rgb(116, 116, 116);
     }
+    h3{
+      margin-left:10px;
+      margin-right:10px;
+      font-size:15px;
+    }
+    p{
+      margin-top: 0px;
+      margin-left:10px;
+      margin-right:10px;
+      font-size:12px;
+    }
+
 
   </style>
 </head>
 <body>
-    <div>
-      <img src="./images/image-qr-code.png" alt="qrcode" >
-      <h3>Improve your front-end skills by building projects</h3>
-      <p>scan this qr code to visit Frontend mentor and take your coding skills to the next level</p>
+    <div class="box">
+      <div class="container">
+        <img src="./images/image-qr-code.png" alt="qrcode" width="200" height="200" >
+        <h3>Improve your front-end skills by building projects</h3>
+        <p>scan this qr code to visit Frontend mentor and take your coding skills to the next level</p>
+      </div>
     </div>
     
   </div>
